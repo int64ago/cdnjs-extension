@@ -1,0 +1,94 @@
+<head>
+    <style>
+    body {
+        background: #35B4DC;
+    }
+    
+    h1 {
+        display: table;
+        margin: 80px auto;
+        color: #fff;
+        font-size: 40px;
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        letter-spacing: 3px;
+    }
+    
+    form {
+        display: table;
+        margin: 40px auto;
+    }
+    
+    form label {
+        position: relative;
+        display: block;
+    }
+    
+    form label input {
+        font: 18px Helvetica, Arial, sans-serif;
+        box-sizing: border-box;
+        display: block;
+        border: none;
+        padding: 20px;
+        width: 300px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        outline: none;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    form label input::placeholder {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        color: #999;
+        font: 18px Helvetica, Arial, sans-serif;
+    }
+    
+    form label input:focus,
+    form label input.populated {
+        padding-top: 28px;
+        padding-bottom: 12px;
+    }
+    
+    form label input:focus::-webkit-input-placeholder,
+    form label input.populated::-webkit-input-placeholder {
+        color: transparent;
+    }
+    
+    form label input:focus + span,
+    form label input.populated + span {
+        opacity: 1;
+        top: 10px;
+    }
+    
+    form label span {
+        color: #35dc9b;
+        font: 13px Helvetica, Arial, sans-serif;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    img {
+        margin: 10px auto;
+        display: block;
+        box-shadow: 0 8px 6px -6px black;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>七牛镜像地址</h1>
+    <form>
+        <label>
+            <input type="text" placeholder="https://your.bucket.domain">
+            <span>Qiniu</span>
+        </label>
+    </form>
+    <div>
+        <img src="https://dn-getlink.qbox.me/tki2acjkk2o6r.png">
+    </div>
+    <script src="js/options.js"></script>
+</body>
