@@ -17,9 +17,23 @@
 主要使用步骤
 ---
  - 安装插件
- - 七牛开个空间，设置镜像源为 `http://cdnjs.cloudflare.com`
- - 插件里设置好七牛空间的地址，HTTP/HTTPS 均可，如果是自定义域名当然更好了
+ - 七牛开个空间，设置镜像源
+ - 插件里设置好七牛空间的地址，七牛提供了 HTTP/HTTPS，如果是自定义域名当然更好了
  - 刷新 [cdnjs](https://cdnjs.com/) ，就可以任意搜索和使用库了
+
+镜像源设置
+---
+新版：选择空间 ---> 镜像存储 ---> 镜像源<br>
+旧版：选择空间 ---> 空间设置 ---> 基本设置 ---> 镜像存储
+
+如果想链接保持原来的风格：<br>
+`http(s)://your.qiniu.domain/ajax/libs/jquery/2.1.4/jquery.min.js`<br>
+那么需要设置镜像源为：`http://cdnjs.cloudflare.com` 且配置页面**不要**勾选`去除 ajax/libs/`<br>
+
+如果想链接风格为：<br>
+`http(s)://your.qiniu.domain/jquery/2.1.4/jquery.min.js`<br>
+那么需要设置镜像源为：`http://cdnjs.cloudflare.com/ajax/libs` 且配置页面**需要**勾选`去除 ajax/libs/`<br>
+
 
 增加新库
 ---

@@ -6,14 +6,12 @@
         });
     });
     chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-        if (request.method == "qiniu") {
+        if (request.method == "info") {
             chrome.storage.sync.get({
-                qiniu: localStorage.qiniu
+                qiniu: '',
+                noPreffix: false
             }, function(res) {
-                localStorage.qiniu = res.qiniu;
-                sendResponse({
-                    status: res.qiniu
-                });
+                sendResponse(res);
             });
         }
         return true;

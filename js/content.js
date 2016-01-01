@@ -1,15 +1,14 @@
 (function() {
 
-    var cdnjs = 'https://cdnjs.cloudflare.com';
     var replaceLink = function() {
         chrome.runtime.sendMessage({
-            method: 'qiniu'
-        }, function(response) {
-            qiniu = response.status;
-            if (qiniu) {
+            method: 'info'
+        }, function(res) {
+            if (res.qiniu) {
+                var cdnjs = 'https://cdnjs.cloudflare.com' + (res.noPreffix ? '/ajax/libs' : '');
                 var eles = document.getElementsByClassName('library-url');
                 Array.prototype.forEach.call(eles, function(ele) {
-                    ele.innerText = ele.innerText.replace(cdnjs, qiniu);
+                    ele.innerText = ele.innerText.replace(cdnjs, res.qiniu);
                 });
             }
         });

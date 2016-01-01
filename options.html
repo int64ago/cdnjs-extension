@@ -2,6 +2,8 @@
     <style>
     body {
         background: #35B4DC;
+        color: white;
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     }
     
     h1 {
@@ -9,7 +11,6 @@
         margin: 50px auto;
         color: #fff;
         font-size: 40px;
-        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
         letter-spacing: 3px;
     }
     
@@ -71,19 +72,44 @@
         transition: all 0.2s ease-in-out;
     }
     
-    img {
-        margin: 10px auto;
+    form .input-helper {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    
+    form .input-helper:before {
+        content: '';
         display: block;
-        box-shadow: 0 8px 6px -6px black;
+        position: absolute;
+    }
+    
+    form .input-helper--checkbox {
+        padding-left: 20px;
+    }
+    
+    form .input-helper--checkbox:before {
+        top: 2px;
+        left: 0;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #45EB00;
+    }
+    
+    form input[type="checkbox"] {
+        display: none;
+    }
+    
+    form input[type="checkbox"]:checked + label:before {
+        background: #45EB00;
     }
     
     #help {
-        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
         text-align: center;
         color: white;
         font-size: 15px
     }
-
+    
     #help a {
         color: #FBF935;
         text-decoration: none;
@@ -95,16 +121,16 @@
     <h1>七牛镜像地址</h1>
     <form>
         <label>
-            <input type="text" placeholder="https://your.bucket.domain">
+            <input id="qiniu-domain" type="text" placeholder="https://your.bucket.domain">
             <span>Qiniu</span>
+        </label>
+        <input id="checkbox-input" type="checkbox" value="remove-preffix">
+        <label for="checkbox-input" class="input-helper input-helper--checkbox">
+            去除 ajax/libs/
         </label>
     </form>
     <div id="help">
-        ※ 先设置好镜像源，然后把对应空间的地址填在这里（注意格式） ※
-        <a href="https://goo.gl/w45HSn" target="_blank">GitHub</a>
-    </div>
-    <div>
-        <img src="https://dn-getlink.qbox.me/tki2acjkk2o6r.png">
+        ※ 需要先设置好七牛空间的镜像源，具体见 <a href="https://goo.gl/w45HSn" target="_blank"> GitHub</a>※
     </div>
     <script src="js/options.js"></script>
 </body>
