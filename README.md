@@ -2,7 +2,7 @@
 
  > Hi, 如果你是从 cdn.int64ago.org 跳转过来的，不要惊讶，以前的 CDN 地址依然有效<br>
  > 之前的网站的代码：https://github.com/int64ago/cdn<br>
- > 因为我发现使用插件的方式会更优雅，而且可以自定义自己的七牛空间
+ > 因为我发现使用插件的方式会更优雅，而且可以自定义自己的七牛空间<br>
  > 如果你需要搜索新的库，并且不想去申请七牛空间，可以继续使用我提供的：https://dn-cdnjscn.qbox.me<br>
  > 不过，我还是建议使用自己的空间，因为我不知道我的空间可以支撑多久
 
@@ -27,3 +27,12 @@
 如果你需要的库恰好没有，但是又想统一使用 [cdnjs](https://cdnjs.com/) 和 插件怎么办？（强迫症嘛～）<br>
 很简单， [cdnjs](https://cdnjs.com/) 上有个 `Request a lib` ，去提交就可以了<br>
 不过要注意库是主流或者规范的，然后你提 Issue/PR 也要规范
+
+使用预览
+---
+
+![](https://dn-getlink.qbox.me/5cyfjsoo5hfr.png)
+
+![](https://dn-getlink.qbox.me/ifodrknle4s4i.png)
+
+![](https://dn-getlink.qbox.me/dujywgfsqncdi.png)
