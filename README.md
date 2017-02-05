@@ -38,8 +38,8 @@
 使用预览
 ---
 
-![](https://cdn.int64ago.org/grjwel6u323xr.png)
+![](https://cloud.githubusercontent.com/assets/2230882/22627401/7dd9280e-ebfd-11e6-934a-fcb8c0bfe0d7.png)
 
-![](https://cdn.int64ago.org/f1n4xn4gqfr.png)
+![](https://cloud.githubusercontent.com/assets/2230882/22627418/becee5f6-ebfd-11e6-96f4-236bf8ee15c6.png)
 
-![](https://cdn.int64ago.org/gywcf19fz85mi.png)
+![](https://cloud.githubusercontent.com/assets/2230882/22627419/bed12730-ebfd-11e6-8be0-0c5858f34efa.png)
