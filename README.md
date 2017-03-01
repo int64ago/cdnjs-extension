@@ -1,6 +1,6 @@
 # Qiniu 4 cdnjs
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/efnleacpnahhggepkgoeegkaaiiaifpf.svg?style=flat-square)]()
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/efnleacpnahhggepkgoeegkaaiiaifpf.svg?style=flat-square)](https://chrome.google.com/webstore/detail/qiniu-4-cdnjs/efnleacpnahhggepkgoeegkaaiiaifpf)
 
 [cdnjs](https://cdnjs.com/) 应该是世界上最全的 JS/CSS 公共库，由 [CloudFlare](https://www.cloudflare.com/) 提供 CDN 服务
 
